@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface KriptoApi {
-    String sembol = "SHIBUSDT";
+    String sembol = "FTMUSDT";
 
   @GET("/api/v3/klines?symbol=" + sembol + "&interval=1m")
  //  @GET("/api/v3/depth?symbol=" + sembol )
