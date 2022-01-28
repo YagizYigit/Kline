@@ -17,48 +17,31 @@ import org.json.JSONException;
 
 public class KlineModel {
  
-    String openTime;              // Opentime
-
+    String openTime;                      // Opentime
    
-    String open;                // Open
+    String open;                          // Open
 
-   
-    String high;                // High
-
-    
-    String low;                 // Low
-
-   
-    String close;               // Close
-
+    String high;                          // High
+ 
+    String low;                           // Low
+ 
+    String close;                         // Close
   
-    String volume;               // Volume
+    String volume;                        // Volume
    
-    String closeTime;             // Close time
+    String closeTime;                     // Close time
     
-    String quoteAssetVolume;                 // Quote asset volume
+    String quoteAssetVolume;              // Quote asset volume
     
-    String numberOfTrades;                  // Number of trades
+    String numberOfTrades;                // Number of trades
    
-    String takerBuyBaseAssetVolume;                  // Taker buy base asset volume
+    String takerBuyBaseAssetVolume;       // Taker buy base asset volume
     
-    String takerBuyQuoteAssetVolume;                  // Taker buy quote asset volume
+    String takerBuyQuoteAssetVolume;      // Taker buy quote asset volume
     
-    String igNoreKline;              // Ignore.
+    String igNoreKline;                   // Ignore.
    
-    String[] array = {
-            "openTime",
-            "open",
-            "high",
-            "low",
-            "close",
-            "volume",
-            "closeTime",
-            "quoteAssetVolume",
-            "numberOfTrades",
-            "takerBuyBaseAssetVolume",
-            "takerBuyQuoteAssetVolume",
-            "igNoreKline"};
+   
 
     public String getOpenTime() {
         return openTime;
