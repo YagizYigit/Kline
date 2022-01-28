@@ -16,36 +16,36 @@ import org.json.JSONException;
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 public class KlineModel {
-    //   @SerializedName("openTime")
+ 
     String openTime;              // Opentime
 
-    //    @SerializedName("open")
+   
     String open;                // Open
 
-    //    @SerializedName("high")
+   
     String high;                // High
 
-    //    @SerializedName("low")
+    
     String low;                 // Low
 
-    //     @SerializedName("close")
+   
     String close;               // Close
 
-    //   @SerializedName("5")
+  
     String volume;               // Volume
-    //     @SerializedName("6")
+   
     String closeTime;             // Close time
-    //     @SerializedName("7")
+    
     String quoteAssetVolume;                 // Quote asset volume
-    //     @SerializedName("8")
+    
     String numberOfTrades;                  // Number of trades
-    //     @SerializedName("9")
+   
     String takerBuyBaseAssetVolume;                  // Taker buy base asset volume
-    //     @SerializedName("10")
+    
     String takerBuyQuoteAssetVolume;                  // Taker buy quote asset volume
-    //    @SerializedName("11")
+    
     String igNoreKline;              // Ignore.
-    /**/
+   
     String[] array = {
             "openTime",
             "open",
