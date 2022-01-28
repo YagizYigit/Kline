@@ -31,19 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     Retrofit retrofit;
     OkHttpClient sharedClient;
-    String[] array = {
-            "openTime",
-            "open",
-            "high",
-            "low",
-            "close",
-            "volume",
-            "closeTime",
-            "quoteAssetVolume",
-            "numberOfTrades",
-            "takerBuyBaseAssetVolume",
-            "takerBuyQuoteAssetVolume",
-            "igNoreKline"};
+ 
 
     private String BASE_URL = "https://api1.binance.com";
 
@@ -54,23 +42,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
        
+        Gson gson = new GsonBuilder().setLenient().create();
 
-
-        Gson gson = new Gson().newBuilder().create();
-
-        Dispatcher dispatcher = new Dispatcher();
-        dispatcher.setMaxRequestsPerHost(500);
-        dispatcher.setMaxRequests(500);
-        sharedClient = new OkHttpClient.Builder()
-                .dispatcher(dispatcher)
-                .pingInterval(20, TimeUnit.SECONDS)
-                .build();
+      
 
 
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create(gson))
-                .client(sharedClient)
                 .build();
 
        loadData();    
